@@ -1,0 +1,137 @@
+:root{--ink:#3a2320;--muted:#6f5249;--paper:#f7f2ee;--paper2:#f0e4dc;--sage:#a8543a;--sage2:#e3b9a4;--plum:#7a2f22;--gold:#c08552;--line:rgba(58,35,32,.2);--serif:Georgia,"Yu Mincho","游明朝","Hiragino Mincho ProN",serif;--sans:"Zen Kaku Gothic New","Noto Sans JP","Meiryo","メイリオ","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--sans);font-weight:400;line-height:2;letter-spacing:.03em}
+a{color:inherit}
+.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+.nav{position:fixed;z-index:20;inset:0 0 auto;background:rgba(247,242,238,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{height:68px;display:flex;align-items:center;justify-content:space-between}
+.brand{text-decoration:none;font:500 18px/1 var(--serif);letter-spacing:.12em}
+.menu{display:flex;gap:22px}
+.menu a{font-size:11px;text-transform:uppercase;letter-spacing:.18em;text-decoration:none}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;color:#f7efe7;background:radial-gradient(circle at 50% 42%,#b05a3e 0,#8f3a28 34%,#5f2016 72%,#2a0e0a 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(232,190,160,.26);border-radius:50%;width:720px;height:220px;transform:rotate(-14deg)}
+.hero:after{width:1040px;height:390px;border-color:rgba(226,160,110,.18);transform:rotate(11deg)}
+.hero-content{position:relative;z-index:2;padding:120px 20px}
+.kicker{margin:0 0 18px;text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--sage2)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+.hero h1{font-size:clamp(24px,3.8vw,48px);line-height:1;letter-spacing:.12em;text-transform:uppercase}
+.hero h1 em{display:block;margin-top:.16em;font-size:clamp(76px,14vw,170px);line-height:.72;letter-spacing:-.035em;color:#f3cdb4;text-transform:uppercase}
+.hero .jp{font-size:clamp(17px,1.7vw,21px);letter-spacing:.28em;margin:42px 0 22px}
+.lede{font-family:var(--serif);font-size:clamp(18px,2.3vw,27px);line-height:1.8}
+.section{padding:110px 0;border-bottom:1px solid var(--line)}
+.section.dark{background:linear-gradient(145deg,#2a0e0a,#7a2f22 55%,#a85238);color:#fbf3ee}
+.section.soft{background:var(--paper2)}
+.section h2{font-size:clamp(40px,6vw,72px);line-height:1.05}
+.section-head{margin-bottom:56px}
+.intro{max-width:760px;font-size:15px}
+.intro p{margin:1.4em 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);list-style:none;padding:0}
+.grid li{background:var(--paper);padding:30px;min-height:190px}
+.grid li{position:relative;padding-top:72px;display:flex;flex-direction:column}
+.grid li::before{position:absolute;top:22px;right:25px;width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(150,90,66,.38);border-radius:50%;color:var(--sage);font:400 25px/1 var(--serif);background:rgba(250,243,236,.6)}
+#develop .grid li:nth-child(1)::before{content:"↗"}
+#develop .grid li:nth-child(2)::before{content:"⊙"}
+#develop .grid li:nth-child(3)::before{content:"⌁"}
+#develop .grid li:nth-child(4)::before{content:"△"}
+#develop .grid li:nth-child(5)::before{content:"◇"}
+#develop .grid li:nth-child(6)::before{content:"⌒"}
+#develop .grid li:nth-child(7)::before{content:"✣"}
+#develop .grid li:nth-child(7){grid-column:1/-1;min-height:0}
+#release .grid li:nth-child(1)::before{content:"○"}
+#release .grid li:nth-child(2)::before{content:"≈"}
+#release .grid li:nth-child(3)::before{content:"☾"}
+#release .grid li:nth-child(4)::before{content:"↔"}
+#release .grid li:nth-child(5)::before{content:"〰"}
+#release .grid li:nth-child(6)::before{content:"⊂"}
+#release .grid li:nth-child(7)::before{content:"?"}
+#release .grid li:nth-child(8)::before{content:"…"}
+.grid .num{order:1;font:italic 22px var(--serif);color:var(--gold)}
+.grid .ja{order:2;display:block;margin-top:18px;font:400 clamp(29px,2.7vw,36px)/1.45 "Yu Mincho","游明朝","Hiragino Mincho ProN","Noto Serif JP",serif;color:var(--ink);letter-spacing:.025em}
+.grid .en{order:3;display:block;font:400 10px var(--serif);line-height:1.3;margin:8px 0 0;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.leave-grid{grid-template-columns:repeat(2,1fr)}
+.leave-grid li{min-height:170px;background:#f1e2d9}
+.leave-grid .en{color:var(--plum)}
+.toc{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.toc a{display:grid;grid-template-columns:70px 1fr 1fr;align-items:center;padding:26px 0;text-decoration:none;border-bottom:1px solid var(--line);transition:.25s}
+.toc a:hover{padding-left:14px;color:var(--sage)}
+.toc .n{font:italic 18px var(--serif);color:var(--gold)}
+.toc .en{font:500 28px var(--serif)}
+.toc .en{display:flex;align-items:center;gap:18px}
+.toc .en::before{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border:1px solid rgba(150,90,66,.38);border-radius:50%;color:var(--sage);font:400 22px/1 var(--serif)}
+.toc li:nth-child(1) .en::before{content:"◎"}
+.toc li:nth-child(2) .en::before{content:"◐"}
+.toc li:nth-child(3) .en::before{content:"△"}
+.toc li:nth-child(4) .en::before{content:"⊙"}
+.toc li:nth-child(5) .en::before{content:"⇄"}
+.toc li:nth-child(6) .en::before{content:"▦"}
+.toc li:nth-child(7) .en::before{content:"✓"}
+.toc .ja{font-size:13px}
+.quote{text-align:center;max-width:780px;margin:auto}
+.quote strong{display:block;font:400 clamp(38px,6vw,72px)/1.1 var(--serif);color:#f6dcc9}
+.quote p{margin-top:30px}
+.affirmations{background:linear-gradient(145deg,#f4e5db,#e6c8b2);text-align:center}
+.affirmations .kicker{color:var(--sage)}
+.affirmations h2{margin-bottom:48px}
+.affirmation-list{display:grid;gap:0;max-width:820px;margin:auto;border-top:1px solid var(--line)}
+.affirmation-list p{margin:0;padding:22px 18px;border-bottom:1px solid var(--line);font:400 clamp(20px,2.4vw,30px)/1.65 "Yu Mincho","游明朝","Hiragino Mincho ProN","Noto Serif JP",serif}
+.footer{padding:70px 0;background:#2a0e0a;color:#e0c3b2;font-size:12px}
+.chapter-hero{padding:150px 0 78px;background:linear-gradient(145deg,#2a0e0a,#9c4a33);color:#f7efe7}
+.chapter-hero h1{font-size:clamp(50px,8vw,94px);line-height:.9}
+.chapter-main{padding:84px 0 110px}
+.prose{max-width:760px}
+.prose h2{font-size:42px;margin:1.8em 0 .5em}
+.prose h3{font-size:26px;margin:1.8em 0 .4em;color:var(--sage)}
+.prose p{margin:1.2em 0}
+.achilles-note{margin:.55em 0 1.7em!important;font-size:12px;line-height:1.8;color:var(--muted);letter-spacing:.04em}
+.achilles-note strong{font-weight:500;color:var(--ink)}
+.prose strong{font-weight:500}
+.callout{margin:42px 0;padding:28px 32px;border-left:2px solid var(--sage);background:var(--paper2);font-family:var(--serif);font-size:24px;line-height:1.6}
+.pager{display:flex;justify-content:space-between;margin-top:70px;padding-top:24px;border-top:1px solid var(--line);font-size:12px}
+.pager a{text-decoration:none}
+@media(max-width:720px){.menu{display:none}
+.grid,.leave-grid{grid-template-columns:1fr 1fr}
+.toc a{grid-template-columns:48px 1fr}
+.toc .ja{grid-column:2}
+.section{padding:78px 0}
+.grid li{padding:22px;min-height:165px}
+.hero h1{font-size:clamp(21px,6vw,27px);line-height:1;letter-spacing:.1em}
+.hero h1 em{font-size:clamp(68px,22vw,94px);line-height:.78;letter-spacing:-.035em}
+.hero .jp{font-size:clamp(16px,4.6vw,19px);letter-spacing:.2em;margin-top:38px}
+.chapter-hero{padding:126px 0 62px}
+.chapter-hero h1{font-size:clamp(38px,12vw,54px);line-height:1.05;word-break:keep-all;overflow-wrap:normal;letter-spacing:-.02em}
+.chapter-hero .jp{font-size:12px;line-height:1.9;letter-spacing:.12em;word-break:keep-all;overflow-wrap:break-word;margin-top:24px}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr}
+.wrap{width:min(100% - 28px,1080px)}
+}
+
+
+/* Shared typography balance — 2026-08 */
+.section h2{font-size:clamp(34px,4.5vw,56px);line-height:1.18;letter-spacing:.015em;text-wrap:balance;word-break:auto-phrase;line-break:strict}
+.section-head h2{white-space:nowrap}
+.intro{font-size:clamp(14px,1.35vw,16px);line-height:2}
+.grid .ja{font-size:clamp(22px,2.15vw,29px);line-height:1.5;margin-top:14px;text-wrap:pretty;word-break:auto-phrase;line-break:strict;overflow-wrap:normal}
+.grid .ja br{display:none}
+.grid .en{font-size:11px;line-height:1.45;letter-spacing:.1em}
+.toc .en{font-size:clamp(22px,2.3vw,27px)}
+.toc .ja{font-size:14px;line-height:1.7;text-wrap:pretty;word-break:auto-phrase;line-break:strict}
+.quote strong{font-size:clamp(32px,4.5vw,54px);line-height:1.25;text-wrap:balance;word-break:auto-phrase;line-break:strict}
+.quote strong br{display:none}
+.chapter-hero h1{font-size:clamp(48px,6.5vw,76px);line-height:1}
+.chapter-hero .jp{font-size:clamp(14px,1.5vw,17px);line-height:1.8;letter-spacing:.1em;text-wrap:balance;word-break:auto-phrase;line-break:strict}
+.prose{font-size:clamp(15px,1.25vw,17px)}
+.prose h2{font-size:clamp(30px,3.2vw,38px);line-height:1.35;text-wrap:pretty;word-break:auto-phrase;line-break:strict}
+@media(max-width:720px){
+.section{padding:82px 0}
+.section h2{font-size:clamp(30px,9vw,38px)}
+.section-head h2{white-space:nowrap;font-size:clamp(29px,8.7vw,37px)}
+.grid .ja{font-size:clamp(19px,5.8vw,24px);line-height:1.48}
+.grid .en{font-size:10px}
+.toc .en{font-size:22px}
+.toc .ja{font-size:13px}
+.quote strong{font-size:clamp(29px,8.2vw,39px);line-height:1.3}
+.chapter-hero h1{font-size:clamp(36px,10vw,48px);line-height:1.08;text-wrap:balance;word-break:normal;overflow-wrap:normal}
+.chapter-hero .jp{font-size:14px;line-height:1.75;letter-spacing:.06em}
+.prose h2{font-size:clamp(27px,7.8vw,33px);line-height:1.4}
+}
