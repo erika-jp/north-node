@@ -102,10 +102,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .callout p+p{margin-top:1.1em}
 .callout{margin:42px 0;padding:28px 32px;border-left:2px solid var(--sage);background:var(--paper2);font-family:var(--serif);font-size:24px;line-height:1.6}
 .chapter-nav{margin-top:5em;padding-top:2.4em;border-top:1px solid var(--line)}
-.chapter-nav__next{display:block;text-decoration:none;background:var(--paper2);border-left:3px solid var(--sage);padding:26px 30px;transition:background .25s,padding-left .25s}
-.chapter-nav__next:hover{background:#f6e5d9;padding-left:38px}
+.chapter-nav__next{display:block;text-decoration:none;text-align:right;background:var(--paper2);border-right:3px solid var(--sage);padding:26px 30px;transition:background .25s,padding-right .25s}
+.chapter-nav__next:hover{background:#f6e5d9;padding-right:38px}
 .chapter-nav__label{display:block;font:400 11px var(--serif);letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:12px}
 .chapter-nav__en{display:block;font:500 clamp(27px,3.6vw,36px)/1.15 var(--serif);color:var(--ink);letter-spacing:.01em}
+.chapter-nav__en::after{content:"→";margin-left:.35em;color:var(--sage);font-weight:400}
 .chapter-nav__ja{display:block;margin-top:12px;font-size:15px;line-height:1.7;color:var(--muted)}
 .chapter-nav__prev{display:inline-block;margin-top:24px;font-size:14px;line-height:1.7;text-decoration:none;color:var(--muted);border-bottom:1px solid var(--line)}
 .chapter-nav__prev:hover{color:var(--sage);border-color:var(--sage)}
