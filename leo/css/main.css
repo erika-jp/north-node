@@ -1,26 +1,26 @@
-:root{--ink:#3b2f1c;--muted:#6f5b3a;--paper:#faf6ef;--paper2:#f2e8d6;--sage:#b07d2a;--sage2:#e8cea0;--plum:#7a5410;--gold:#c9973f;--line:rgba(59,47,28,.2);--serif:Georgia,"Yu Mincho","游明朝","Hiragino Mincho ProN",serif;--sans:"Zen Kaku Gothic New","Noto Sans JP","Meiryo","メイリオ","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Segoe UI",sans-serif}
+:root{--ink:#2b2621;--muted:#6b6358;--paper:#fdfbf6;--paper2:#f7f0e3;--sage:#a86a14;--sage2:#e8cea0;--plum:#7a4a08;--gold:#cf9a2b;--line:rgba(43,38,33,.2);--serif:Georgia,"Yu Mincho","游明朝","Hiragino Mincho ProN",serif;--sans:"Zen Kaku Gothic New","Noto Sans JP","Meiryo","メイリオ","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Segoe UI",sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--sans);font-weight:400;line-height:2;letter-spacing:.03em}
 a{color:inherit}
 .wrap{width:min(1080px,calc(100% - 40px));margin:auto}
-.nav{position:fixed;z-index:20;inset:0 0 auto;background:rgba(250,246,239,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{position:fixed;z-index:20;inset:0 0 auto;background:rgba(253,251,246,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{height:68px;display:flex;align-items:center;justify-content:space-between}
 .brand{text-decoration:none;font:500 18px/1 var(--serif);letter-spacing:.12em}
 .menu{display:flex;gap:22px}
 .menu a{font-size:11px;text-transform:uppercase;letter-spacing:.18em;text-decoration:none}
-.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;color:#f7efe7;background:radial-gradient(circle at 50% 42%,#a06e20 0,#855611 34%,#5a380a 72%,#271805 100%)}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;color:#f7efe7;background:radial-gradient(circle at 50% 42%,#b0761c 0,#8d5410 34%,#5c330a 72%,#251603 100%)}
 .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(240,214,160,.26);border-radius:50%;width:720px;height:220px;transform:rotate(-14deg)}
 .hero:after{width:1040px;height:390px;border-color:rgba(226,180,90,.18);transform:rotate(11deg)}
 .hero-content{position:relative;z-index:2;padding:120px 20px}
 .kicker{margin:0 0 18px;text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--sage2)}
 h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .hero h1{font-size:clamp(24px,3.8vw,48px);line-height:1;letter-spacing:.12em;text-transform:uppercase}
-.hero h1 em{display:block;margin-top:.16em;font-size:clamp(76px,14vw,170px);line-height:.72;letter-spacing:-.035em;color:#f2d9a8;text-transform:uppercase}
+.hero h1 em{display:block;margin-top:.16em;font-size:clamp(76px,14vw,170px);line-height:.72;letter-spacing:-.035em;color:#f5dda6;text-transform:uppercase}
 .hero .jp{font-size:clamp(17px,1.7vw,21px);letter-spacing:.28em;margin:42px 0 22px}
 .lede{font-family:var(--serif);font-size:clamp(18px,2.3vw,27px);line-height:1.8}
 .section{padding:110px 0;border-bottom:1px solid var(--line)}
-.section.dark{background:linear-gradient(145deg,#271805,#7a5410 55%,#a97d2a);color:#fbf3ee}
+.section.dark{background:linear-gradient(145deg,#251603,#7a4a08 55%,#b07d1e);color:#fbf3ee}
 .section.soft{background:var(--paper2)}
 .section h2{font-size:clamp(40px,6vw,72px);line-height:1.05}
 .section-head{margin-bottom:56px}
@@ -29,7 +29,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);list-style:none;padding:0}
 .grid li{background:var(--paper);padding:30px;min-height:190px}
 .grid li{position:relative;padding-top:72px;display:flex;flex-direction:column}
-.grid li::before{position:absolute;top:22px;right:25px;width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(150,110,40,.38);border-radius:50%;color:var(--sage);font:400 25px/1 var(--serif);background:rgba(252,247,238,.6)}
+.grid li::before{position:absolute;top:22px;right:25px;width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(160,110,30,.38);border-radius:50%;color:var(--sage);font:400 25px/1 var(--serif);background:rgba(253,251,246,.65)}
 #develop .grid li:nth-child(1)::before{content:"◎"}
 #develop .grid li:nth-child(2)::before{content:"⊙"}
 #develop .grid li:nth-child(3)::before{content:"✦"}
@@ -54,7 +54,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .grid .ja{order:2;display:block;margin-top:18px;font:400 clamp(29px,2.7vw,36px)/1.45 "Yu Mincho","游明朝","Hiragino Mincho ProN","Noto Serif JP",serif;color:var(--ink);letter-spacing:.025em}
 .grid .en{order:3;display:block;font:400 10px var(--serif);line-height:1.3;margin:8px 0 0;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
 .leave-grid{grid-template-columns:repeat(2,1fr)}
-.leave-grid li{min-height:170px;background:#f2e6d0}
+.leave-grid li{min-height:170px;background:#f6ecd9}
 .leave-grid .en{color:var(--plum)}
 .toc{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
 .toc a{display:grid;grid-template-columns:70px 1fr 1fr;align-items:center;padding:26px 0;text-decoration:none;border-bottom:1px solid var(--line);transition:.25s}
@@ -62,7 +62,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .toc .n{font:italic 18px var(--serif);color:var(--gold)}
 .toc .en{font:500 28px var(--serif)}
 .toc .en{display:flex;align-items:center;gap:18px}
-.toc .en::before{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border:1px solid rgba(150,110,40,.38);border-radius:50%;color:var(--sage);font:400 22px/1 var(--serif)}
+.toc .en::before{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border:1px solid rgba(160,110,30,.38);border-radius:50%;color:var(--sage);font:400 22px/1 var(--serif)}
 .toc li:nth-child(1) .en::before{content:"◎"}
 .toc li:nth-child(2) .en::before{content:"◐"}
 .toc li:nth-child(3) .en::before{content:"△"}
@@ -72,15 +72,15 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .toc li:nth-child(7) .en::before{content:"✓"}
 .toc .ja{font-size:13px}
 .quote{text-align:center;max-width:780px;margin:auto}
-.quote strong{display:block;font:400 clamp(38px,6vw,72px)/1.1 var(--serif);color:#f6e3bf}
+.quote strong{display:block;font:400 clamp(38px,6vw,72px)/1.1 var(--serif);color:#f8e6bd}
 .quote p{margin-top:30px}
-.affirmations{background:linear-gradient(145deg,#f5e9d5,#e6cfa6);text-align:center}
+.affirmations{background:linear-gradient(145deg,#f8efdc,#ecd7a8);text-align:center}
 .affirmations .kicker{color:var(--sage)}
 .affirmations h2{margin-bottom:48px}
 .affirmation-list{display:grid;gap:0;max-width:820px;margin:auto;border-top:1px solid var(--line)}
 .affirmation-list p{margin:0;padding:22px 18px;border-bottom:1px solid var(--line);font:400 clamp(20px,2.4vw,30px)/1.65 "Yu Mincho","游明朝","Hiragino Mincho ProN","Noto Serif JP",serif}
-.footer{padding:70px 0;background:#271805;color:#e0cba8;font-size:13px}
-.chapter-hero{padding:150px 0 78px;background:linear-gradient(145deg,#271805,#9c6f22);color:#f7efe7}
+.footer{padding:70px 0;background:#251603;color:#e5cfa6;font-size:13px}
+.chapter-hero{padding:150px 0 78px;background:linear-gradient(145deg,#251603,#a06a15);color:#f7efe7}
 .chapter-hero h1{font-size:clamp(50px,8vw,94px);line-height:.9}
 .chapter-main{padding:84px 0 110px}
 .prose{max-width:760px}
@@ -107,7 +107,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 .callout{margin:42px 0;padding:28px 32px;border-left:2px solid var(--sage);background:var(--paper2);font-family:var(--serif);font-size:24px;line-height:1.6}
 .chapter-nav{margin-top:5em;padding-top:2.4em;border-top:1px solid var(--line)}
 .chapter-nav__next{display:block;text-decoration:none;text-align:right;background:var(--paper2);border-right:3px solid var(--sage);padding:26px 30px;transition:background .25s,padding-right .25s}
-.chapter-nav__next:hover{background:#f7ecd8;padding-right:38px}
+.chapter-nav__next:hover{background:#f9f1df;padding-right:38px}
 .chapter-nav__label{display:block;font:400 11px var(--serif);letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:12px}
 .chapter-nav__en{display:block;font:500 clamp(27px,3.6vw,36px)/1.15 var(--serif);color:var(--ink);letter-spacing:.01em}
 .chapter-nav__en::after{content:"→";margin-left:.35em;color:var(--sage);font-weight:400}
