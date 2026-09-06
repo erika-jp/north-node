@@ -9,6 +9,7 @@ a{color:inherit}
 .brand{text-decoration:none;font:500 18px/1 var(--serif);letter-spacing:.12em}
 .menu{display:flex;gap:22px}
 .menu a{font-size:11px;text-transform:uppercase;letter-spacing:.18em;text-decoration:none}
+.menu .lang{font-size:12px;letter-spacing:.08em;text-transform:none;color:var(--sage)}
 .hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;color:var(--onDark);background:radial-gradient(circle at 50% 42%,var(--hero1) 0,var(--hero2) 34%,var(--hero3) 72%,var(--hero4) 100%)}
 .hero:before,.hero:after{content:"";position:absolute;border:1px solid var(--ring1);border-radius:50%;width:720px;height:220px;transform:rotate(-14deg)}
 .hero:after{width:1040px;height:390px;border-color:var(--ring2);transform:rotate(11deg)}
