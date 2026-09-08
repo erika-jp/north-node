@@ -66,6 +66,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
 .sign--virgo{--accent:#006d57;--accent-ink:#1e2f2a;--tint:#e4f0eb;--tint-hover:#d5e8e1}
 .sign--pisces{--accent:#873f5e;--accent-ink:#331f28;--tint:#f4e8ed;--tint-hover:#ecdae2}
 .sign--libra{--accent:#006a77;--accent-ink:#1f2f31;--tint:#e4eff0;--tint-hover:#d5e7e9}
+.sign--capricorn{--accent:#604d8f;--accent-ink:#2a2338;--tint:#ece7f5;--tint-hover:#e0d8f0}
 
 .note{margin-top:44px;padding-top:28px;border-top:1px solid var(--line);font-size:14px;line-height:1.9;color:var(--muted)}
 .footer{padding:56px 0;background:#0d0d10;color:#b9b5ab;font-size:12px;line-height:1.9}
@@ -98,7 +99,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
     <p class="signs__label">Readings</p>
     <h2>星座を選ぶ</h2>
 
-    <p class="signs__note">円の位置がそのまま色になっています。向かい合う星座どうしは補色です。色の濃い5つが公開中で、薄い7つはこれから並びます。</p>
+    <p class="signs__note">円の位置がそのまま色になっています。向かい合う星座どうしは補色です。色の濃い6つが公開中で、薄い6つはこれから並びます。</p>
 
     <svg class="wheel" viewBox="0 0 520 520" role="img" aria-label="12星座から選ぶ">
       <line class="wheel__axis" x1="260" y1="52" x2="260" y2="468"/>
@@ -112,7 +113,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
       <a href="libra/" aria-label="天秤座を読む"><path class="wheel__seg" fill="#009aa8" d="M310.73,449.32A196,196 0 0 1 209.27,449.32L233.08,360.46A104,104 0 0 0 286.92,360.46Z"/><text class="wheel__en" x="260" y="478" text-anchor="middle">Libra</text><text class="wheel__ja" x="260" y="492" text-anchor="middle">天秤座</text></a>
       <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#007eb5" d="M209.27,449.32A196,196 0 0 1 121.41,398.59L186.46,333.54A104,104 0 0 0 233.08,360.46Z"/><text class="wheel__en" x="150" y="448" text-anchor="middle">Scorpio</text><text class="wheel__ja" x="150" y="462" text-anchor="middle">蠍座</text></g>
       <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#3b5eb2" d="M121.41,398.59A196,196 0 0 1 70.68,310.73L159.54,286.92A104,104 0 0 0 186.46,333.54Z"/><text class="wheel__en" x="67" y="368" text-anchor="middle">Sagittarius</text><text class="wheel__ja" x="67" y="382" text-anchor="middle">射手座</text></g>
-      <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#6a4fa9" d="M70.68,310.73A196,196 0 0 1 70.68,209.27L159.54,233.08A104,104 0 0 0 159.54,286.92Z"/><text class="wheel__en" x="41" y="258" text-anchor="middle">Capricorn</text><text class="wheel__ja" x="41" y="272" text-anchor="middle">山羊座</text></g>
+      <a href="capricorn/" aria-label="山羊座を読む"><path class="wheel__seg" fill="#6a4fa9" d="M70.68,310.73A196,196 0 0 1 70.68,209.27L159.54,233.08A104,104 0 0 0 159.54,286.92Z"/><text class="wheel__en" x="41" y="258" text-anchor="middle">Capricorn</text><text class="wheel__ja" x="41" y="272" text-anchor="middle">山羊座</text></a>
       <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#964e9b" d="M70.68,209.27A196,196 0 0 1 121.41,121.41L186.46,186.46A104,104 0 0 0 159.54,233.08Z"/><text class="wheel__en" x="67" y="148" text-anchor="middle">Aquarius</text><text class="wheel__ja" x="67" y="162" text-anchor="middle">水瓶座</text></g>
       <a href="pisces/" aria-label="魚座を読む"><path class="wheel__seg" fill="#ad5078" d="M121.41,121.41A196,196 0 0 1 209.27,70.68L233.08,159.54A104,104 0 0 0 186.46,186.46Z"/><text class="wheel__en" x="150" y="67" text-anchor="middle">Pisces</text><text class="wheel__ja" x="150" y="81" text-anchor="middle">魚座</text></a>
       <circle cx="260" cy="260" r="102" fill="#fbfaf8"/>
@@ -148,6 +149,13 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
       <span class="sign__meta">7 Chapters</span>
     </a>
     <a class="sign-alt sign--libra" lang="zh-Hans" href="libra/zh/">中文版（天秤座北交点）</a>
+
+    <a class="sign sign--capricorn" href="capricorn/">
+      <span class="sign__en">Capricorn</span>
+      <span class="sign__ja">やぎ座のドラゴンヘッド</span>
+      <span class="sign__lede">感情に左右される生き方から離れ、自分の人生を管理し、大切な目標を実現していくために。</span>
+      <span class="sign__meta">7 Chapters</span>
+    </a>
 
     <a class="sign sign--pisces" href="pisces/">
       <span class="sign__en">Pisces</span>
