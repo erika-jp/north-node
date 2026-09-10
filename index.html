@@ -62,6 +62,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
 .sign-alt::before{content:"→";margin-right:.5em}
 
 .sign--aries{--accent:#8c403c;--accent-ink:#2f2321;--tint:#f5e9e8;--tint-hover:#eedcda}
+.sign--cancer{--accent:#596104;--accent-ink:#232617;--tint:#eef4dc;--tint-hover:#e4edc8}
 .sign--leo{--accent:#2f6a33;--accent-ink:#23301f;--tint:#e9f0e9;--tint-hover:#dde8dd}
 .sign--virgo{--accent:#006d57;--accent-ink:#1e2f2a;--tint:#e4f0eb;--tint-hover:#d5e8e1}
 .sign--pisces{--accent:#873f5e;--accent-ink:#331f28;--tint:#f4e8ed;--tint-hover:#ecdae2}
@@ -100,7 +101,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
     <p class="signs__label">Readings</p>
     <h2>星座を選ぶ</h2>
 
-    <p class="signs__note">円の位置がそのまま色になっています。向かい合う星座どうしは補色です。色の濃い7つが公開中で、薄い5つはこれから並びます。</p>
+    <p class="signs__note">円の位置がそのまま色になっています。向かい合う星座どうしは補色です。色の濃い8つが公開中で、薄い4つはこれから並びます。</p>
 
     <svg class="wheel" viewBox="0 0 520 520" role="img" aria-label="12星座から選ぶ">
       <line class="wheel__axis" x1="260" y1="52" x2="260" y2="468"/>
@@ -108,7 +109,7 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
       <a href="aries/" aria-label="牡羊座を読む"><path class="wheel__seg" fill="#b4514c" d="M209.27,70.68A196,196 0 0 1 310.73,70.68L286.92,159.54A104,104 0 0 0 233.08,159.54Z"/><text class="wheel__en" x="260" y="38" text-anchor="middle">Aries</text><text class="wheel__ja" x="260" y="52" text-anchor="middle">牡羊座</text></a>
       <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#cb7229" d="M310.73,70.68A196,196 0 0 1 398.59,121.41L333.54,186.46A104,104 0 0 0 286.92,159.54Z"/><text class="wheel__en" x="370" y="67" text-anchor="middle">Taurus</text><text class="wheel__ja" x="370" y="81" text-anchor="middle">牡牛座</text></g>
       <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#dca81c" d="M398.59,121.41A196,196 0 0 1 449.32,209.27L360.46,233.08A104,104 0 0 0 333.54,186.46Z"/><text class="wheel__en" x="452" y="148" text-anchor="middle">Gemini</text><text class="wheel__ja" x="452" y="162" text-anchor="middle">双子座</text></g>
-      <g class="wheel__soon"><path class="wheel__seg wheel__seg--soon" fill="#a2ae38" d="M449.32,209.27A196,196 0 0 1 449.32,310.73L360.46,286.92A104,104 0 0 0 360.46,233.08Z"/><text class="wheel__en" x="479" y="258" text-anchor="middle">Cancer</text><text class="wheel__ja" x="479" y="272" text-anchor="middle">蟹座</text></g>
+      <a href="cancer/" aria-label="蟹座を読む"><path class="wheel__seg" fill="#a2ae38" d="M449.32,209.27A196,196 0 0 1 449.32,310.73L360.46,286.92A104,104 0 0 0 360.46,233.08Z"/><text class="wheel__en" x="479" y="258" text-anchor="middle">Cancer</text><text class="wheel__ja" x="479" y="272" text-anchor="middle">蟹座</text></a>
       <a href="leo/" aria-label="獅子座を読む"><path class="wheel__seg" fill="#4e9a52" d="M449.32,310.73A196,196 0 0 1 398.59,398.59L333.54,333.54A104,104 0 0 0 360.46,286.92Z"/><text class="wheel__en" x="452" y="368" text-anchor="middle">Leo</text><text class="wheel__ja" x="452" y="382" text-anchor="middle">獅子座</text></a>
       <a href="virgo/" aria-label="乙女座を読む"><path class="wheel__seg" fill="#00977c" d="M398.59,398.59A196,196 0 0 1 310.73,449.32L286.92,360.46A104,104 0 0 0 333.54,333.54Z"/><text class="wheel__en" x="370" y="448" text-anchor="middle">Virgo</text><text class="wheel__ja" x="370" y="462" text-anchor="middle">乙女座</text></a>
       <a href="libra/" aria-label="天秤座を読む"><path class="wheel__seg" fill="#009aa8" d="M310.73,449.32A196,196 0 0 1 209.27,449.32L233.08,360.46A104,104 0 0 0 286.92,360.46Z"/><text class="wheel__en" x="260" y="478" text-anchor="middle">Libra</text><text class="wheel__ja" x="260" y="492" text-anchor="middle">天秤座</text></a>
@@ -129,6 +130,12 @@ h1{font-family:var(--serif);font-weight:400;margin:0;font-size:clamp(46px,9vw,10
       <span class="sign__meta">7 Chapters</span>
     </a>
 
+    <a class="sign sign--cancer" href="cancer/">
+      <span class="sign__en">Cancer</span>
+      <span class="sign__ja">かに座のドラゴンヘッド</span>
+      <span class="sign__lede">すべてを管理して安心を得ようとする生き方をゆるめ、自分の感情を認めるところから、内側に安心の土台を築くために。</span>
+      <span class="sign__meta">7 Chapters</span>
+    </a>
     <a class="sign sign--leo" href="leo/">
       <span class="sign__en">Leo</span>
       <span class="sign__ja">しし座のドラゴンヘッド</span>
